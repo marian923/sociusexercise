@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="css/estiloform.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+    <div class="form-container">
+        <i style="font-size: 70px;" class="fa-solid fa-user-tie"></i>
+        <br></br>
+        <form>
+            <table  class="tabla" >
+                <tr>
+                    <td>
+                        <input  type="email" id="email" name="email" placeholder="Email" required>
+                        <br></br>
+
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td>
+                        <input type="password" id="password" name="password" placeholder="Password" required>
+                        <br></br>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <select id="city" name="city" required>
+                            <option value="" disabled selected>Ciudad</option>
+                            <option value="santiago">Santiago</option>
+                            <option value="valparaiso">Valparaíso</option>
+                            <option value="villa-alemana">Villa Alemana</option>
+                        </select>
+                        <br></br>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <br></br>
+                        <input  type="checkbox" name="Forgot Password" value="fp" id="Forgot Password">
+                        <label for="Forgot Password">Forgot Password</label>
+                        <br></br>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <input onclick="alertaMensaje()" type="submit"  value="Enviar">
+                        
+                    </td>
+                    
+                </tr>
+                
+            </table>
+        </form>
+        <script src="assets/js/main.js"></script>
+    </div>
+</body>
+</html>
